@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+         Main ListView 
+		 Always give id value as list(@android:id/list)
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_home_screen_2"
+            android:onClick="buttonDelete"
+            android:text="delete" />
+ <Button
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_go_back"
+            android:onClick="buttonMenu"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home_screen_1"
+            android:onClick="buttonScore"
+            android:text="score" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home_screen_1"
+            android:onClick="buttonComment"
+            android:text="commenter" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Nom de Live: "
+        android:textColor="#33CCFF"
+        android:textStyle="bold" >
+    </TextView>
+    <!-- Price Label -->
+
+    <TextView
+        android:id="@+id/liveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#002EB8"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="description: "
+        android:textColor="#33CCFF"
+        android:textStyle="bold" >
+    </TextView>
+    <!-- Price Label -->
+
+    <TextView
+        android:id="@+id/longdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#002EB8"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="information: "
+        android:textColor="#33CCFF"
+        android:textStyle="bold" >
+    </TextView>
+    <!-- Price Label -->
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#002EB8"
+        android:textSize="12sp"
+        android:textStyle="bold" >
+    </TextView>
+    <!-- Price Label -->
+
+    <TextView
+        android:id="@+id/leScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#002EB8"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <!-- Price Label -->
+
+
+    <!-- Price Label -->
+
+
+    <!-- Price Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="                        les commentaires : "
+        android:textColor="#33CCFF"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

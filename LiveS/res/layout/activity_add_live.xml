@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".AddLiveActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="484dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_go_back"
+            android:onClick="buttonExit"
+            android:text="Menu" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selectioner une compétition" />
+
+        <Spinner
+            android:id="@+id/Spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/select3" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selectioner un depatement" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/TextView02"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/select2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selectioner un sport" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/select2" />
+
+        <EditText
+            android:id="@+id/NomPerson"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/EditText02"
+            android:layout_below="@+id/button1"
+            android:ems="10"
+            android:hint="Entrez votre nom"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/NomLive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/EditText01"
+            android:layout_below="@+id/EditText01"
+            android:ems="10"
+            android:hint="Entrer le nom de live"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/altitude"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="laltitude"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="longitude"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/equipe2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="equipe2"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/equipe1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="equipe1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/shortDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="88dp"
+            android:layout_below="@+id/EditText05"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:hint="short description"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/longDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="145dp"
+            android:layout_alignBaseline="@+id/EditText08"
+            android:layout_alignBottom="@+id/EditText08"
+            android:layout_alignRight="@+id/TextView01"
+            android:ems="10"
+            android:hint="long description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="valider" />
+    </LinearLayout>
+
+</ScrollView>

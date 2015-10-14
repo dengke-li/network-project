@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LiveScore</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_search_live">SearchLiveActivity</string>
+    <string name="title_activity_see_live">SeeLiveActivity</string>
+    <string name="title_activity_add_live">AddLiveActivity</string>
+    <string name="select">choisir un sport</string>
+    <string name="select2">choisir un department</string>
+    <string name="select3">choisir une competition</string>
+    <string name="button_label">Submit</string>
+    <string name="title_activity_resulte_search">ResulteSearch</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_lives">DetailLivesActivity</string>
+    <string name="title_activity_detail_live_user">DetailLiveUserActivity</string>
+
+</resources>

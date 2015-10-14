@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="L’objectif de l’application est de commenter des événements sportifs et diffuser ces informations aux utilisateurs de cette application.
+
+L’application  permet de faire les actions suivantes:\n
+
+• Chercher un Live (En selectionant le Sport, Département, Compétition, date de début disponible dans le web server)\n
+
+• Suivre les details Live et les changements des resultats\n
+
+• Créer un Live et le sauvgarder dans la Bd de telephone et de web server\n
+
+• Modifier les details des Lives crees par l&apos;utilisateur de l&apos;application:\n
+
+   • Mettre à jour le score du Live\n
+    • Ajouter un Commentaire à un Live\n
+    • Terminer un Live (supprimer le live du webServer et de  la Bd du telephone)"
+        android:textColor="#33CCFF"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>
