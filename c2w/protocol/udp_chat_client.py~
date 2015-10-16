@@ -1,0 +1,338 @@
+# -*- coding: utf-8 -*-
+from twisted.internet.protocol import DatagramProtocol
+from twisted.internet import reactor
+from c2w.main.lossy_transport import LossyTransport
+import logging
+import struct 
+import ctypes
+from c2w.main.client_model import c2wClientModel
+
+logging.basicConfig()
+moduleLogger = logging.getLogger('c2w.protocol.udp_chat_client_protocol')
+
+
+class c2wUdpChatClientProtocol(DatagramProtocol):
+
+    def __init__(self, serverAddress, serverPort, clientProxy, lossPr):
+        """
+        :param serverAddress: The IP address (or the name) of the c2w server,
+            given by the user.
+        :param serverPort: The port number used by the c2w server,
+            given by the user.
+        :param clientProxy: The clientProxy, which the protocol must use
+            to interact with the Graphical User Interface.
+
+        Class implementing the UDP version of the client protocol.
+
+        .. note::
+            You must write the implementation of this class.
+
+        Each instance must have at least the following attributes:
+
+        .. attribute:: serverAddress
+
+            The IP address (or the name) of the c2w server.
+
+        .. attribute:: serverPort
+
+            The port number used by the c2w server.
+
+        .. attribute:: clientProxy
+
+            The clientProxy, which the protocol must use
+            to interact with the Graphical User Interface.
+
+        .. attribute:: lossPr
+
+            The packet loss probability for outgoing packets.  Do
+            not modify this value!  (It is used by startProtocol.)
+
+        .. note::
+            You must add attributes and methods to this class in order
+            to have a working and complete implementation of the c2w
+            protocol.
+        """
+
+        self.serverAddress = serverAddress
+        self.serverPort = serverPort
+        self.clientProxy = clientProxy
+        self.lossPr = lossPr
+        self.nbtime = 0
+        self.movielist=''
+        self.USERID=0
+        self.flag=0
+        self.obj=None
+        self.flaguser=0
+        self.flagmovie=0
+        self.sequencenb=0
+    def startProtocol(self):
+        """
+        DO NOT MODIFY THE FIRST TWO LINES OF THIS METHOD!!
+        """
+        self.transport = LossyTransport(self.transport, self.lossPr)
+        DatagramProtocol.transport = self.transport
+    
+    def sendRequest(self, buf, adress):
+        """
+        :param line: the text of the question from the user interface
+        :type line: string
+
+        This function must send the request to the server.
+        """
+        self.transport.write(buf,adress)
+
+    def sendLoginRequestOIE(self, userName):
+        """
+        :param string userName: The user name that the user has typed.
+
+        The controller calls this function as soon as the user clicks on
+        the login button.
+        """
+        print "first send"
+        moduleLogger.debug('loginRequest called with username=%s', userName)
+        lenUserName=len(userName)
+        buf=ctypes.create_string_buffer(6+lenUserName)
+        struct.pack_into('>BBBBH'+str(lenUserName)+'s',buf,0,3,0,0,0,lenUserName, userName)
+        adress=(self.serverAddress,self.serverPort)
+        
+        self.sendRequest(buf,adress)
+        self.nbtime=self.nbtime+1
+        print self.nbtime
+        print "first send"
+        
+
+        ## brain: call later
+        ##if(haven't received):
+        #    #self.datagramReceived( datagram, (host, port))
+        #    
+        if(self.nbtime<=3):
+            print 'send again'
+            self.timeout(userName)
+            
+            
+                
+    def sendMovieListAck(sequencenb,userid):
+        #moduleLogger.debug('loginRequest called with username=%s', )
+        buf=ctypes.create_string_buffer(6)
+        struct.pack_into('>BBBBH',buf,0,79,sequencenb,userid,0,0)
+        adress=(self.serverAddress,self.serverPort)
+        self.sendRequest(buf,adress)
+    def sendUserListAck(sequencenb,userid):
+        #moduleLogger.debug('loginRequest called with username=%s', )
+        buf=ctypes.create_string_buffer(6)
+        struct.pack_into('>BBBBH',buf,0,79,sequencenb,userid,0,0)
+        adress=(self.serverAddress,self.serverPort)
+        self.sendRequest(buf,adress)
+        
+        
+        
+        
+        
+    def sendChatMessageOIE(self, message):
+        """
+        :param message: The text of the chat message.
+        :type message: string
+
+        Called **by the controller**  when the user has decided to send
+        a chat message
+
+        .. note::
+           This is the only function handling chat messages, irrespective
+           of the room where the user is.  Therefore it is up to the
+           c2wChatClientProctocol or to the server to make sure that this
+           message is handled properly, i.e., it is shown only by the
+           client(s) who are in the same room.
+        """
+        
+        pass
+
+    def sendJoinRoomRequestOIE(self, roomName):
+        """
+        :param roomName: The room name (or movie title.)
+
+        Called **by the controller**  when the user
+        has clicked on the watch button or the leave button,
+        indicating that she/he wants to change room.
+
+        .. warning:
+            The controller sets roomName to
+            c2w.main.constants.ROOM_IDS.MAIN_ROOM when the user
+            wants to go back to the main room.
+            
+        """
+        moduleLogger.debug('loginRequest called with username=%s', )
+        roomid=c2wClientModel.getMovieByTitle(roomName).movieId   
+        
+        buf=ctypes.create_string_buffer(6)
+        struct.pack_into('>BBBBH',buf,0,33,self.sequencenb,self.userid,roomid) ## type of roomid depend on the addmovie , here we think is interger
+        adress=(self.serverAddress,self.serverPort)
+        self.sendRequest(buf,adress)
+        
+        
+
+    def sendLeaveSystemRequestOIE(self):
+        """
+        Called **by the controller**  when the user
+        has clicked on the leave button in the main room.
+        """
+        pass
+    
+    def timeout(self,userName):
+        
+        #if(self.flag==1):
+        #    print 54
+        
+        print self.nbtime
+        if(self.nbtime==3):
+            print 'end'
+            self.obj.cancel()
+            self.clientProxy.applicationQuit()
+        if(self.flag==0):
+           
+            print self.nbtime
+            self.obj=reactor.callLater(1,self.sendLoginRequestOIE,userName)
+            #self.nbtime=self.nbtime+1
+           
+            
+            #reactor.callLater(x+2,self.stopReactor)
+            #reactor.run()
+           
+        #reactor.stop()
+            
+
+    def datagramReceived(self, buf, (host, port)):
+        """
+        :param string datagram: the payload of the UDP packet.
+        :param host: the IP address of the source.
+        :param port: the source port.
+
+        Called **by Twisted** when the client has received a UDP
+        packet.
+        """
+
+        adress=(host, port)
+        
+        tuple1=struct.unpack_from('B',buf[0])
+        
+        frg=self.getbit(tuple1[0],1,1)
+        
+        ack=self.getbit(tuple1[0],2,2)
+        mestype=self.getbit(tuple1[0],3,6)
+        roomtype=self.getbit(tuple1[0],7,8)
+        tuple2=struct.unpack_from('B',buf[1])
+        sequencenb=tuple2[0]	
+        tuple3=struct.unpack_from('B',buf[2])
+        userid=tuple3[0]
+        tuple4=struct.unpack_from('B',buf[3])
+        destid=tuple4[0]
+        tuple5=struct.unpack_from('H',buf[4:6])
+        length=tuple5[0]
+        tuple6=struct.unpack_from(str(length)+'s',buf[6:])
+        data=tuple6[0]
+        
+        print mestype
+        print ack
+        if(ack==1 and mestype==0):
+            
+            self.flag=1
+            #self.timeout(data)
+            print "ACK received"
+            self.obj.cancel()
+            self.USERID=userid
+           
+        if(ack==1 and mestype==14):
+            clientProxy.connectionRejectedONE(data)
+        if(mestype==3 and ack==0):	##if it is the movielist given by the server,client send movielistack to server          
+            sendMovieListAck(sequencenb,userid)
+            self.movielist=data
+            self.movielistlength=length
+            self.flaguser=1
+        if(mestype==5 and ack==0 and userid==USERID):	##if it is the userlist given by the server,client send userlistack to server             
+            sendUserListAck(sequencenb,userid)
+            self.userlist=data
+            self.userlistlength=length
+            self.flagmovie=1
+        if(flaguser==1 and flagmovie==1):     ##
+            i=0
+            j=0
+            userListresult=[]
+            movieListresult=[]
+            while(i<=userlistlength):                
+                namelength=self.userlist[i]
+                p=i
+                i=i+3+namelength
+                usernameoflist=self.userlist[p+3:i-1]
+                tuple=(usernameoflist,'MAIN_ROOM')
+                userListresult.append(tuple)
+            while(j<=movielistlength):                
+                namelength=self.movielist[j]
+                p=j
+                j=j+2+namelength
+                movietitleoflist=self.userlist[p+2:j-1]
+                ip,portnb=c2wClientModel.getMovieAddrPort(movietitleoflist)  ##return (ip,portnb) of a movie
+                tuple=(movietitleoflist,ip,portnb)
+                movieListresult.append(tuple)
+            self.clientProxy.initCompleteONE(userListresult, movieListresult)
+        
+       
+        
+        
+        
+            
+            
+            
+        
+            
+           
+        
+        
+        #header=struct.unpack_from('B',buf[0])[0]
+        #sequence_number=struct.unpack_from('>B',buf[1])[0]
+        #userId=struct.unpack_from('>B',buf[2])[0]
+        #destId=struct.unpack_from('>B',buf[3])[0]
+        #lengthData=struct.unpack_from('>H',buf[4:6])[0]
+        #data=struct.unpack_from(str(lengthData)+'s',buf[6:])[0]
+
+        
+            
+            #sendLoginRequestOIE(self, userName)
+            
+            
+            
+    def getbit(self,byte,start,end):
+        return byte/pow(2,8-end)-byte/pow(2,9-start)*pow(2,end-start+1)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        pass
