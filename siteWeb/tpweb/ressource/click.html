@@ -1,0 +1,79 @@
+<html>
+<head>
+<script type="text/javascript">
+function showCustomer(str)
+{
+var xmlhttp;    
+if (str=="")
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","gethint.php?q="+str,true);
+xmlhttp.send();
+}
+function clickcommentaire(str)
+{
+var xmlhttp;    
+if (str=="")
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","tableau.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
+
+<form action="" style="margin-top:15px;"> 
+<label>choisez une cours:
+<select name="customers" onchange="showCustomer(this.value)" style="font-family:Verdana, Arial, Helvetica, sans-serif;">
+<option value="info1">info1</option>
+<option value="info2">info2</option>
+<option value="info3">info3</option>
+<option value="info4">info4</option>
+<option value="info5">info5</option>
+<option value="info6">info6</option>
+</select>
+</label>
+</form>
+
+<button type="button" onclick="clickcommentaire()">click ici</button>
+<br />
+<div id="txtHint">list les info</div>
+
+</body>
+</html>
+

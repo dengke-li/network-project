@@ -1,0 +1,86 @@
+switch(domaine){
+	case "info":{
+	cours = prompt("cours:veuillez choisir language programmation,basedonnee,graph,ingenirie logiciel,intelligence artificiel,algorithm,Systemes distribués", "separes par des virgules");
+        break;}
+	case "mts":{
+	cours = prompt("cours:traitement d'image,signal numérique", "separes par des virgules");
+        break;}
+	case "elp":{
+	cours = prompt("cours:traitement d'video,signal numérique", "separes par des virgules");
+        break;}
+	case "reseau":{
+	cours = prompt("cours:securite,signal numérique", "separes par des virgules");
+        break;}
+	default: {
+	cours = prompt("cours:microeconomie,marcoeconomie", "separes par des virgules");}
+        }
+
+
+
+
+
+
+function checkNote(note)
+{
+	note = parseInt(note);
+	if (isNaN(note))
+	   {
+	   alert("Veuillez rentrer un nombre");
+	   return 0;
+	   }
+	else
+	   {
+	   if (note < 0)
+	      {
+	      alert("La note doit etre positive");
+	      }
+	   else if (note > 10)
+	      {
+	      alert("La note doit etre inferieure a 10");
+	      }
+	    else
+	    {
+	    	return 1;
+	    }
+	   }
+}
+
+
+function checkIfOk(note,keywords)
+{
+	var test = checkNote(note);
+	if (test)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+function userInp()
+{
+	var note = prompt("Note du site", "0-10");
+	
+	var domaine = prompt("Domaine,veuillez choisir info,mts,reseau,esh,elp", "");
+	var cours=prompt("cours","");
+	
+	var keywords=prompt("keywords","");
+	var commentaire=prompt("commentaire","");
+	if (checkIfOk(note,keywords))
+		{
+			alert('merci !');
+			document.location='http://web-tp.svc.enst-bretagne.fr/~dli/geturl.php?url='+encodeURIComponent(location.href)+'&note='+encodeURIComponent(note)+'&cours'=+encodeURIComponent(cours)+'&keywords='+encodeURIComponent(keywords)+'&domaine='+encodeURIComponent(domaine)+'&commentaire='+encodeURIComponent(commentaire);
+		}
+	else
+		{
+			eval(userInp());
+		}
+}
+
+eval(userInp());
+
+// var toto = userInp();
+// alert(location.href)
+// alert(document.title);
