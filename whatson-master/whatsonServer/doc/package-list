@@ -1,0 +1,9 @@
+com.first.whatson.algorithms
+com.first.whatson.apis.echonest
+com.first.whatson.apis.musicstory
+com.first.whatson.connection
+com.first.whatson.database
+com.first.whatson.database.objects
+com.first.whatson.database.tables
+com.first.whatson.rest
+com.first.whatson.servlet

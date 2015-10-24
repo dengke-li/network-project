@@ -1,0 +1,6 @@
+Alice,alicecaron94@gmail.com,alice
+Jeremy,jeremy.sayag@telecom-paristech.fr,jeremy
+Minh,minh.thao_chan@telecom-sudparis.eu,minh
+Mehdi,mehdi.zougmid@telecom-em.eu,mehdi
+Claire,claire_mucchielli@hotmail.com,claire
+Dengke,dengke.li@telecom-bretagne.eu,dengke

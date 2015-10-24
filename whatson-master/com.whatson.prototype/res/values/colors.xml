@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whiite">#ffffff</color>
+    
+    <color name="white">#000000</color>
+    <color name="black">#000000</color>
+    <color name="error">#ff0000</color>
+    <color name="blue2">#0055bb</color>
+    <color name="gray">#C8D2CC</color>
+    <color name="graytext">#747D77</color>
+    <color name="buttonStart">#4FE385</color>
+<!--     <color name="blue1">#447799</color> -->
+    <color name="blue1">#ffffff</color>
+    <color name="buttonEnd">#1FA24F</color>
+    <color name="buttonborder">#747D77</color>
+    
+
+</resources>

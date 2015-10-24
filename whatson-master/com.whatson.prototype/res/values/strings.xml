@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhatsOn</string>
+
+    <!-- menu items -->
+    <string name="action_settings">Type of external content</string>
+    <string name="profilpreferences">preferences</string>
+    <string name="historic">History</string>
+    <string name="restart">Restart</string>
+    <string name="logout">Log out</string>
+
+    <!-- connexion fields -->
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="login">Log in</string>
+    <string name="signup"><u>Sign up</u></string>
+
+    <!-- caption messages -->
+    <string name="instruction">[caption]</string>
+
+    <!-- Result layout -->
+    <string name="label">Mobile list</string>
+    
+    <!-- Notation -->
+    <string name="notation">Note this content: </string>
+
+</resources>

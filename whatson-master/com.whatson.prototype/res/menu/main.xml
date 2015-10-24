@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.whatson.prototype.MainActivity" >
+
+    <!-- user group data -->
+    <group
+        android:id="@+id/usermenuitem"
+        android:visible="false" >
+
+        <!--
+        <item
+            android:id="@+id/historic"
+            android:title="@string/historic"/>
+        <item
+            android:id="@+id/profilpreferences"
+            android:title="@string/profilpreferences"/>
+        -->
+        <item
+            android:id="@+id/action_settings"
+            android:title="@string/action_settings"/>
+        <item
+            android:id="@+id/restart"
+            android:icon="@drawable/restart"
+            android:title="@string/restart"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"/>
+    </group>
+
+</menu>
