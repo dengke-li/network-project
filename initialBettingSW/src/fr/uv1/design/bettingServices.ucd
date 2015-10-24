@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="bettingServices" size="2653,2318" id="fr.uv1.bettingServices" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020696E697469616C42657474696E6753572F75736572">
+  <children xsi:type="editmodel:ClassEditModel" name="Competitor" location="569,1603" size="121,230" id="fr.uv1.bettingServices/Competitor" runTimeClassModel="getFirstname(),id,getId(),getLastname(),setLastname(Ljava.lang.String;),Competitor(ILjava.lang.String;Ljava.lang.String;),lastname,Competitor(Ljava.lang.String;Ljava.lang.String;),firstname,setId(I),setFirstname(Ljava.lang.String;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="firstname" id="fr.uv1.bettingServices/Competitor#firstname"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="fr.uv1.bettingServices/Competitor#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lastname" id="fr.uv1.bettingServices/Competitor#lastname"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,135">
+      <children xsi:type="editmodel:MethodEditModel" name="Competitor" id="fr.uv1.bettingServices/Competitor#Competitor(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competitor" id="fr.uv1.bettingServices/Competitor#Competitor(ILjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFirstname" id="fr.uv1.bettingServices/Competitor#getFirstname()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="fr.uv1.bettingServices/Competitor#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastname" id="fr.uv1.bettingServices/Competitor#getLastname()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFirstname" id="fr.uv1.bettingServices/Competitor#setFirstname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setId" id="fr.uv1.bettingServices/Competitor#setId(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLastname" id="fr.uv1.bettingServices/Competitor#setLastname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="fr.uv1.bettingServices/Competitor#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ExistingCompetitorException" location="555,1883" size="243,80" id="fr.uv1.bettingServices/ExistingCompetitorException" runTimeClassModel="ExistingCompetitorException(),ExistingCompetitorException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="180,30">
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingCompetitorException" id="fr.uv1.bettingServices/ExistingCompetitorException#ExistingCompetitorException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingCompetitorException" id="fr.uv1.bettingServices/ExistingCompetitorException#ExistingCompetitorException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SubscriberException" location="50,2218" size="180,80" id="fr.uv1.bettingServices/SubscriberException" runTimeClassModel="SubscriberException(),SubscriberException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,30">
+      <children xsi:type="editmodel:MethodEditModel" name="SubscriberException" id="fr.uv1.bettingServices/SubscriberException#SubscriberException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SubscriberException" id="fr.uv1.bettingServices/SubscriberException#SubscriberException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Competition_PodiumDAO" location="50,1603" size="211,230" id="fr.uv1.bettingServices/Competition_PodiumDAO" runTimeClassModel="findresultSecond(Lfr.uv1.bettingServices.Competition_Podium;),findAll(),findByDate(Ljava.sql.Date;),delete(Lfr.uv1.bettingServices.Competition_Podium;),findById(Ljava.lang.Integer;),persist(Lfr.uv1.bettingServices.Competition_Podium;),update(Lfr.uv1.bettingServices.Competition_Podium;),find(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;),resulutpersist(Lfr.uv1.bettingServices.Competition_Podium;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;),findresultThird(Lfr.uv1.bettingServices.Competition_Podium;),findbyname(Ljava.lang.String;),findresultFirst(Lfr.uv1.bettingServices.Competition_Podium;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,180">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/Competition_PodiumDAO#delete(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="fr.uv1.bettingServices/Competition_PodiumDAO#find(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/Competition_PodiumDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findByDate" id="fr.uv1.bettingServices/Competition_PodiumDAO#findByDate(Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/Competition_PodiumDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findbyname" id="fr.uv1.bettingServices/Competition_PodiumDAO#findbyname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findresultFirst" id="fr.uv1.bettingServices/Competition_PodiumDAO#findresultFirst(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findresultSecond" id="fr.uv1.bettingServices/Competition_PodiumDAO#findresultSecond(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findresultThird" id="fr.uv1.bettingServices/Competition_PodiumDAO#findresultThird(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/Competition_PodiumDAO#persist(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resulutpersist" id="fr.uv1.bettingServices/Competition_PodiumDAO#resulutpersist(Lfr.uv1.bettingServices.Competition_Podium;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/Competition_PodiumDAO#update(Lfr.uv1.bettingServices.Competition_Podium;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SubscriberDAO" location="848,1883" size="138,140" id="fr.uv1.bettingServices/SubscriberDAO" runTimeClassModel="findAll(),persist(Lfr.uv1.bettingServices.Subscriber;),findById(Ljava.lang.Integer;),update(Lfr.uv1.bettingServices.Subscriber;),findByUsername(Ljava.lang.String;),delete(Lfr.uv1.bettingServices.Subscriber;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="113,90">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/SubscriberDAO#delete(Lfr.uv1.bettingServices.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/SubscriberDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/SubscriberDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findByUsername" id="fr.uv1.bettingServices/SubscriberDAO#findByUsername(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/SubscriberDAO#persist(Lfr.uv1.bettingServices.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/SubscriberDAO#update(Lfr.uv1.bettingServices.Subscriber;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DatabaseConnection" location="545,2218" size="177,65" id="fr.uv1.bettingServices/DatabaseConnection" runTimeClassModel="getConnection()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,15">
+      <children xsi:type="editmodel:MethodEditModel" name="getConnection" id="fr.uv1.bettingServices/DatabaseConnection#getConnection()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AuthenticationException" location="605,2088" size="206,80" id="fr.uv1.bettingServices/AuthenticationException" runTimeClassModel="AuthenticationException(Ljava.lang.String;),AuthenticationException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,30">
+      <children xsi:type="editmodel:MethodEditModel" name="AuthenticationException" id="fr.uv1.bettingServices/AuthenticationException#AuthenticationException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="AuthenticationException" id="fr.uv1.bettingServices/AuthenticationException#AuthenticationException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BettingPasswordsVerifier" location="280,2218" size="215,65" id="fr.uv1.bettingServices/BettingPasswordsVerifier" runTimeClassModel="verify([C)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="53,15">
+      <children xsi:type="editmodel:MethodEditModel" name="verify" id="fr.uv1.bettingServices/BettingPasswordsVerifier#verify([C)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CompetitorDAO" location="695,1073" size="255,200" id="fr.uv1.bettingServices/CompetitorDAO" runTimeClassModel="findAll(),update(Lfr.uv1.bettingServices.Competitor;),findByName(Ljava.lang.String;Ljava.lang.String;),getPodiumCompetitionListCompetitors(I),playdelete(Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competition;),playpersist(Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competition;),findById(Ljava.lang.Integer;),delete(Lfr.uv1.bettingServices.Competitor;),persist(Lfr.uv1.bettingServices.Competitor;),getWinnerCompetitionListCompetitors(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="232,150">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/CompetitorDAO#delete(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/CompetitorDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/CompetitorDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findByName" id="fr.uv1.bettingServices/CompetitorDAO#findByName(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPodiumCompetitionListCompetitors" id="fr.uv1.bettingServices/CompetitorDAO#getPodiumCompetitionListCompetitors(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinnerCompetitionListCompetitors" id="fr.uv1.bettingServices/CompetitorDAO#getWinnerCompetitionListCompetitors(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/CompetitorDAO#persist(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playdelete" id="fr.uv1.bettingServices/CompetitorDAO#playdelete(Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competition;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playpersist" id="fr.uv1.bettingServices/CompetitorDAO#playpersist(Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competition;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/CompetitorDAO#update(Lfr.uv1.bettingServices.Competitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bet_PodiumDAO" location="50,1883" size="155,155" id="fr.uv1.bettingServices/Bet_PodiumDAO" runTimeClassModel="persist(Lfr.uv1.bettingServices.Bet_Podium;Ljava.lang.Integer;),findAll(),findById(Ljava.lang.Integer;),delete(Lfr.uv1.bettingServices.Bet_Podium;),findbyidcompetition(I),findBySubscriber(I),update(Lfr.uv1.bettingServices.Bet_Podium;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,105">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/Bet_PodiumDAO#delete(Lfr.uv1.bettingServices.Bet_Podium;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/Bet_PodiumDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/Bet_PodiumDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findBySubscriber" id="fr.uv1.bettingServices/Bet_PodiumDAO#findBySubscriber(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findbyidcompetition" id="fr.uv1.bettingServices/Bet_PodiumDAO#findbyidcompetition(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/Bet_PodiumDAO#persist(Lfr.uv1.bettingServices.Bet_Podium;Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/Bet_PodiumDAO#update(Lfr.uv1.bettingServices.Bet_Podium;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BadParametersException" location="341,2088" size="214,80" id="fr.uv1.bettingServices/BadParametersException" runTimeClassModel="BadParametersException(Ljava.lang.String;),BadParametersException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="160,30">
+      <children xsi:type="editmodel:MethodEditModel" name="BadParametersException" id="fr.uv1.bettingServices/BadParametersException#BadParametersException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="BadParametersException" id="fr.uv1.bettingServices/BadParametersException#BadParametersException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ExistingCompetitionException" location="255,1883" size="250,80" id="fr.uv1.bettingServices/ExistingCompetitionException" runTimeClassModel="ExistingCompetitionException(Ljava.lang.String;),ExistingCompetitionException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,30">
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingCompetitionException" id="fr.uv1.bettingServices/ExistingCompetitionException#ExistingCompetitionException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingCompetitionException" id="fr.uv1.bettingServices/ExistingCompetitionException#ExistingCompetitionException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ExistingSubscriberException" location="50,2088" size="241,80" id="fr.uv1.bettingServices/ExistingSubscriberException" runTimeClassModel="ExistingSubscriberException(Ljava.lang.String;),ExistingSubscriberException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="178,30">
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingSubscriberException" id="fr.uv1.bettingServices/ExistingSubscriberException#ExistingSubscriberException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ExistingSubscriberException" id="fr.uv1.bettingServices/ExistingSubscriberException#ExistingSubscriberException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Subscriber" location="461,1073" size="184,470" id="fr.uv1.bettingServices/Subscriber" runTimeClassModel="getFirstName(),Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;I),lastname,password,setId(Ljava.lang.Integer;),setFirstname(Ljava.lang.String;),toString(),id,Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IJ),username,setAccount(J),getAge(),getUsername(),age,equals(Ljava.lang.Object;),Subscriber(Ljava.lang.Integer;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IJ),getPassword(),getLastName(),firstname,setUsername(Ljava.lang.String;),setAge(I),getAccount(),getId(),setLastname(Ljava.lang.String;),account,hashCode(),hasUsername(Ljava.lang.String;),pv">
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,120">
+      <children xsi:type="editmodel:AttributeEditModel" name="account" id="fr.uv1.bettingServices/Subscriber#account"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="age" id="fr.uv1.bettingServices/Subscriber#age"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="firstname" id="fr.uv1.bettingServices/Subscriber#firstname"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="fr.uv1.bettingServices/Subscriber#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lastname" id="fr.uv1.bettingServices/Subscriber#lastname"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="password" id="fr.uv1.bettingServices/Subscriber#password"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pv" id="fr.uv1.bettingServices/Subscriber#pv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="username" id="fr.uv1.bettingServices/Subscriber#username"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="99,300">
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="fr.uv1.bettingServices/Subscriber#Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="fr.uv1.bettingServices/Subscriber#Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IJ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="fr.uv1.bettingServices/Subscriber#Subscriber(Ljava.lang.Integer;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;IJ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="fr.uv1.bettingServices/Subscriber#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAccount" id="fr.uv1.bettingServices/Subscriber#getAccount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAge" id="fr.uv1.bettingServices/Subscriber#getAge()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFirstName" id="fr.uv1.bettingServices/Subscriber#getFirstName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="fr.uv1.bettingServices/Subscriber#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastName" id="fr.uv1.bettingServices/Subscriber#getLastName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPassword" id="fr.uv1.bettingServices/Subscriber#getPassword()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUsername" id="fr.uv1.bettingServices/Subscriber#getUsername()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hasUsername" id="fr.uv1.bettingServices/Subscriber#hasUsername(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hashCode" id="fr.uv1.bettingServices/Subscriber#hashCode()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAccount" id="fr.uv1.bettingServices/Subscriber#setAccount(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAge" id="fr.uv1.bettingServices/Subscriber#setAge(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFirstname" id="fr.uv1.bettingServices/Subscriber#setFirstname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setId" id="fr.uv1.bettingServices/Subscriber#setId(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLastname" id="fr.uv1.bettingServices/Subscriber#setLastname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setUsername" id="fr.uv1.bettingServices/Subscriber#setUsername(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="fr.uv1.bettingServices/Subscriber#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CompetitionException" location="861,2088" size="189,80" id="fr.uv1.bettingServices/CompetitionException" runTimeClassModel="CompetitionException(),CompetitionException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,30">
+      <children xsi:type="editmodel:MethodEditModel" name="CompetitionException" id="fr.uv1.bettingServices/CompetitionException#CompetitionException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="CompetitionException" id="fr.uv1.bettingServices/CompetitionException#CompetitionException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bet_WinnerDAO" location="740,1603" size="155,155" id="fr.uv1.bettingServices/Bet_WinnerDAO" runTimeClassModel="findBySubscriber_id(I),findAll(),delete(Lfr.uv1.bettingServices.Bet_Winner;),findById(Ljava.lang.Integer;),persist(Lfr.uv1.bettingServices.Bet_Winner;Ljava.lang.Integer;),update(Lfr.uv1.bettingServices.Bet_Winner;),findbyidcompetition(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,105">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/Bet_WinnerDAO#delete(Lfr.uv1.bettingServices.Bet_Winner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/Bet_WinnerDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/Bet_WinnerDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findBySubscriber_id" id="fr.uv1.bettingServices/Bet_WinnerDAO#findBySubscriber_id(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findbyidcompetition" id="fr.uv1.bettingServices/Bet_WinnerDAO#findbyidcompetition(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/Bet_WinnerDAO#persist(Lfr.uv1.bettingServices.Bet_Winner;Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/Bet_WinnerDAO#update(Lfr.uv1.bettingServices.Bet_Winner;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Competition_WinnerDAO" location="311,1603" size="208,200" id="fr.uv1.bettingServices/Competition_WinnerDAO" runTimeClassModel="findAll(),persist(Lfr.uv1.bettingServices.Competition_Winner;),delete(Lfr.uv1.bettingServices.Competition_Winner;),findByDate(Ljava.sql.Date;),resulutpersist(Lfr.uv1.bettingServices.Competition_Winner;Lfr.uv1.bettingServices.Competitor;),update(Lfr.uv1.bettingServices.Competition_Winner;),findById(Ljava.lang.Integer;),findresult(Lfr.uv1.bettingServices.Competition_Winner;),find(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;),findbyname(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,150">
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="fr.uv1.bettingServices/Competition_WinnerDAO#delete(Lfr.uv1.bettingServices.Competition_Winner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="fr.uv1.bettingServices/Competition_WinnerDAO#find(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findAll" id="fr.uv1.bettingServices/Competition_WinnerDAO#findAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findByDate" id="fr.uv1.bettingServices/Competition_WinnerDAO#findByDate(Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findById" id="fr.uv1.bettingServices/Competition_WinnerDAO#findById(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findbyname" id="fr.uv1.bettingServices/Competition_WinnerDAO#findbyname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findresult" id="fr.uv1.bettingServices/Competition_WinnerDAO#findresult(Lfr.uv1.bettingServices.Competition_Winner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="persist" id="fr.uv1.bettingServices/Competition_WinnerDAO#persist(Lfr.uv1.bettingServices.Competition_Winner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resulutpersist" id="fr.uv1.bettingServices/Competition_WinnerDAO#resulutpersist(Lfr.uv1.bettingServices.Competition_Winner;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="fr.uv1.bettingServices/Competition_WinnerDAO#update(Lfr.uv1.bettingServices.Competition_Winner;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.18/@sourceConnections.0" name="Betting" location="523,50" size="176,378" id="fr.uv1.bettingServices/Betting" runTimeClassModel="debitSubscriber(Ljava.lang.String;JLjava.lang.String;),changeSubsPwd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),betOnWinner(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;),listSubscribers(Ljava.lang.String;),settlePodium(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),addCompetition(Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Collection;Ljava.lang.String;),deleteCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),listCompetitors(Ljava.lang.String;),cancelCompetition(Ljava.lang.String;Ljava.lang.String;),addCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),settleWinner(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),subscribe(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),consultBetsCompetition(Ljava.lang.String;),unsubscribe(Ljava.lang.String;Ljava.lang.String;),betOnPodium(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;),authenticateMngr(Ljava.lang.String;),listCompetitions(),changeMngrPwd(Ljava.lang.String;Ljava.lang.String;),infosSubscriber(Ljava.lang.String;Ljava.lang.String;),deleteBetsCompetition(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),creditSubscriber(Ljava.lang.String;JLjava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,315">
+      <children xsi:type="editmodel:MethodEditModel" name="addCompetition" id="fr.uv1.bettingServices/Betting#addCompetition(Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Collection;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addCompetitor" id="fr.uv1.bettingServices/Betting#addCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="authenticateMngr" id="fr.uv1.bettingServices/Betting#authenticateMngr(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="betOnPodium" id="fr.uv1.bettingServices/Betting#betOnPodium(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="betOnWinner" id="fr.uv1.bettingServices/Betting#betOnWinner(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cancelCompetition" id="fr.uv1.bettingServices/Betting#cancelCompetition(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeMngrPwd" id="fr.uv1.bettingServices/Betting#changeMngrPwd(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeSubsPwd" id="fr.uv1.bettingServices/Betting#changeSubsPwd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="consultBetsCompetition" id="fr.uv1.bettingServices/Betting#consultBetsCompetition(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="creditSubscriber" id="fr.uv1.bettingServices/Betting#creditSubscriber(Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="debitSubscriber" id="fr.uv1.bettingServices/Betting#debitSubscriber(Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteBetsCompetition" id="fr.uv1.bettingServices/Betting#deleteBetsCompetition(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteCompetitor" id="fr.uv1.bettingServices/Betting#deleteCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="infosSubscriber" id="fr.uv1.bettingServices/Betting#infosSubscriber(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listCompetitions" id="fr.uv1.bettingServices/Betting#listCompetitions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listCompetitors" id="fr.uv1.bettingServices/Betting#listCompetitors(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listSubscribers" id="fr.uv1.bettingServices/Betting#listSubscribers(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="settlePodium" id="fr.uv1.bettingServices/Betting#settlePodium(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="settleWinner" id="fr.uv1.bettingServices/Betting#settleWinner(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="subscribe" id="fr.uv1.bettingServices/Betting#subscribe(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="unsubscribe" id="fr.uv1.bettingServices/Betting#unsubscribe(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BettingSoft" location="485,478" size="252,545" id="fr.uv1.bettingServices/BettingSoft" runTimeClassModel="main([Ljava.lang.String;),TESTDAO(),listSubscribers(Ljava.lang.String;),CreateCompetitor(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),addCompetition(Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Collection;Ljava.lang.String;),addCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),cancelCompetition(Ljava.lang.String;Ljava.lang.String;),authenticateMngr(Ljava.lang.String;),changeMngrPwd(Ljava.lang.String;Ljava.lang.String;),displayAllSubscribers(),infosSubscriber(Ljava.lang.String;Ljava.lang.String;),deleteBetsCompetition(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),displayAllBet_Podiums(),debitSubscriber(Ljava.lang.String;JLjava.lang.String;),displayAllBet_Winners(),displayAllCompetition_Podiums(),betOnWinner(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;),changeSubsPwd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),settlePodium(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),deleteCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),displayAllCompetition_Winners(),listCompetitors(Ljava.lang.String;),settleWinner(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;),searchAllCompetition_PodiumsByDate(Ljava.sql.Date;Ljava.lang.String;),subscribe(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),unsubscribe(Ljava.lang.String;Ljava.lang.String;),consultBetsCompetition(Ljava.lang.String;),betOnPodium(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;),displayAllcompetitors(),listCompetitions(),searchAllCompetition_WinnersByDate(Ljava.sql.Date;Ljava.lang.String;),BettingSoft(Ljava.lang.String;),creditSubscriber(Ljava.lang.String;JLjava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="229,495">
+      <children xsi:type="editmodel:MethodEditModel" name="BettingSoft" id="fr.uv1.bettingServices/BettingSoft#BettingSoft(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="CreateCompetitor" id="fr.uv1.bettingServices/BettingSoft#CreateCompetitor(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="TESTDAO" id="fr.uv1.bettingServices/BettingSoft#TESTDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addCompetition" id="fr.uv1.bettingServices/BettingSoft#addCompetition(Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Collection;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addCompetitor" id="fr.uv1.bettingServices/BettingSoft#addCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="authenticateMngr" id="fr.uv1.bettingServices/BettingSoft#authenticateMngr(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="betOnPodium" id="fr.uv1.bettingServices/BettingSoft#betOnPodium(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="betOnWinner" id="fr.uv1.bettingServices/BettingSoft#betOnWinner(JLjava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cancelCompetition" id="fr.uv1.bettingServices/BettingSoft#cancelCompetition(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeMngrPwd" id="fr.uv1.bettingServices/BettingSoft#changeMngrPwd(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeSubsPwd" id="fr.uv1.bettingServices/BettingSoft#changeSubsPwd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="consultBetsCompetition" id="fr.uv1.bettingServices/BettingSoft#consultBetsCompetition(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="creditSubscriber" id="fr.uv1.bettingServices/BettingSoft#creditSubscriber(Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="debitSubscriber" id="fr.uv1.bettingServices/BettingSoft#debitSubscriber(Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteBetsCompetition" id="fr.uv1.bettingServices/BettingSoft#deleteBetsCompetition(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteCompetitor" id="fr.uv1.bettingServices/BettingSoft#deleteCompetitor(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllBet_Podiums" id="fr.uv1.bettingServices/BettingSoft#displayAllBet_Podiums()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllBet_Winners" id="fr.uv1.bettingServices/BettingSoft#displayAllBet_Winners()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllCompetition_Podiums" id="fr.uv1.bettingServices/BettingSoft#displayAllCompetition_Podiums()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllCompetition_Winners" id="fr.uv1.bettingServices/BettingSoft#displayAllCompetition_Winners()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllSubscribers" id="fr.uv1.bettingServices/BettingSoft#displayAllSubscribers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllcompetitors" id="fr.uv1.bettingServices/BettingSoft#displayAllcompetitors()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="infosSubscriber" id="fr.uv1.bettingServices/BettingSoft#infosSubscriber(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listCompetitions" id="fr.uv1.bettingServices/BettingSoft#listCompetitions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listCompetitors" id="fr.uv1.bettingServices/BettingSoft#listCompetitors(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listSubscribers" id="fr.uv1.bettingServices/BettingSoft#listSubscribers(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="fr.uv1.bettingServices/BettingSoft#main([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="searchAllCompetition_PodiumsByDate" id="fr.uv1.bettingServices/BettingSoft#searchAllCompetition_PodiumsByDate(Ljava.sql.Date;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="searchAllCompetition_WinnersByDate" id="fr.uv1.bettingServices/BettingSoft#searchAllCompetition_WinnersByDate(Ljava.sql.Date;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="settlePodium" id="fr.uv1.bettingServices/BettingSoft#settlePodium(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="settleWinner" id="fr.uv1.bettingServices/BettingSoft#settleWinner(Ljava.lang.String;Lfr.uv1.bettingServices.Competitor;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="subscribe" id="fr.uv1.bettingServices/BettingSoft#subscribe(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="unsubscribe" id="fr.uv1.bettingServices/BettingSoft#unsubscribe(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="fr.uv1.bettingServices/Betting&lt;-fr.uv1.bettingServices/BettingSoft" source="//@children.18" target="//@children.17" targetEnd="//@children.18/@sourceConnections.0/@children.1" sourceEnd="//@children.18/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="126,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,378"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Competition_Winner" location="259,390" size="176,230" id="fr.uv1.bettingServices/Competition_Winner" runTimeClassModel="Competition_Winner(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;Lfr.uv1.bettingServices.Competitor;),Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;),Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;),Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;),Competition_Winner(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;),setBet_Winners(Ljava.util.Collection;),winner,getBet_Winners(),getWinner(),setWinner(Lfr.uv1.bettingServices.Competitor;),Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Lfr.uv1.bettingServices.Competitor;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="winner" id="fr.uv1.bettingServices/Competition_Winner#winner"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,165">
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Winner" id="fr.uv1.bettingServices/Competition_Winner#Competition_Winner(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBet_Winners" id="fr.uv1.bettingServices/Competition_Winner#getBet_Winners()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner" id="fr.uv1.bettingServices/Competition_Winner#getWinner()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBet_Winners" id="fr.uv1.bettingServices/Competition_Winner#setBet_Winners(Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinner" id="fr.uv1.bettingServices/Competition_Winner#setWinner(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="fr.uv1.bettingServices/Competition_Winner#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="fr.uv1.bettingServices/Competition&lt;-fr.uv1.bettingServices/Competition_Winner" source="//@children.19" target="//@children.20/@sourceConnections.0" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Competition_Podium" location="50,390" size="179,305" id="fr.uv1.bettingServices/Competition_Podium" runTimeClassModel="getWinner_first(),getBet_Podium(),winner_first,Competition_Podium(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;),winner_third,setWinner_second(Lfr.uv1.bettingServices.Competitor;),winner_second,Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;),setBet_Podium(Ljava.util.Collection;),toString(),getWinner_third(),Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;),Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;),setWinner_first(Lfr.uv1.bettingServices.Competitor;),Competition_Podium(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;),getWinner_second(),setWinner_third(Lfr.uv1.bettingServices.Competitor;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="156,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="winner_first" id="fr.uv1.bettingServices/Competition_Podium#winner_first"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="winner_second" id="fr.uv1.bettingServices/Competition_Podium#winner_second"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="winner_third" id="fr.uv1.bettingServices/Competition_Podium#winner_third"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,210">
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Podium" id="fr.uv1.bettingServices/Competition_Podium#Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Podium" id="fr.uv1.bettingServices/Competition_Podium#Competition_Podium(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Podium" id="fr.uv1.bettingServices/Competition_Podium#Competition_Podium(Ljava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Podium" id="fr.uv1.bettingServices/Competition_Podium#Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;Ljava.util.Collection;Ljava.util.Collection;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition_Podium" id="fr.uv1.bettingServices/Competition_Podium#Competition_Podium(ILjava.lang.String;Ljava.lang.String;Ljava.sql.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBet_Podium" id="fr.uv1.bettingServices/Competition_Podium#getBet_Podium()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner_first" id="fr.uv1.bettingServices/Competition_Podium#getWinner_first()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner_second" id="fr.uv1.bettingServices/Competition_Podium#getWinner_second()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner_third" id="fr.uv1.bettingServices/Competition_Podium#getWinner_third()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBet_Podium" id="fr.uv1.bettingServices/Competition_Podium#setBet_Podium(Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinner_first" id="fr.uv1.bettingServices/Competition_Podium#setWinner_first(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinner_second" id="fr.uv1.bettingServices/Competition_Podium#setWinner_second(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinner_third" id="fr.uv1.bettingServices/Competition_Podium#setWinner_third(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="fr.uv1.bettingServices/Competition_Podium#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.19/@sourceConnections.0" autoLocated="true" id="fr.uv1.bettingServices/Competition&lt;-fr.uv1.bettingServices/Competition_Podium" source="//@children.20" target="//@children.21" targetEnd="//@children.20/@sourceConnections.0/@children.1" sourceEnd="//@children.20/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,290" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.20/@sourceConnections.0" name="Competition" location="104,50" size="278,290" id="fr.uv1.bettingServices/Competition" runTimeClassModel="setList_competitor(Ljava.util.Collection;),setClose_date(Ljava.util.Date;),getType(),setName(Ljava.lang.String;),close_date,getClose_date(),type,setId(I),setType(Ljava.lang.String;),list_competitor,getName(),getList_competitor(),Competition(Ljava.lang.String;Ljava.lang.String;Ljava.util.Date;),getId(),name,Competition(ILjava.lang.String;Ljava.lang.String;Ljava.util.Date;Ljava.util.Collection;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="255,60">
+      <children xsi:type="editmodel:AttributeEditModel" name="close_date" id="fr.uv1.bettingServices/Competition#close_date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="list_competitor" id="fr.uv1.bettingServices/Competition#list_competitor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="fr.uv1.bettingServices/Competition#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="fr.uv1.bettingServices/Competition#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,180">
+      <children xsi:type="editmodel:MethodEditModel" name="Competition" id="fr.uv1.bettingServices/Competition#Competition(ILjava.lang.String;Ljava.lang.String;Ljava.util.Date;Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Competition" id="fr.uv1.bettingServices/Competition#Competition(Ljava.lang.String;Ljava.lang.String;Ljava.util.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClose_date" id="fr.uv1.bettingServices/Competition#getClose_date()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="fr.uv1.bettingServices/Competition#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getList_competitor" id="fr.uv1.bettingServices/Competition#getList_competitor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getName" id="fr.uv1.bettingServices/Competition#getName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getType" id="fr.uv1.bettingServices/Competition#getType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setClose_date" id="fr.uv1.bettingServices/Competition#setClose_date(Ljava.util.Date;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setId" id="fr.uv1.bettingServices/Competition#setId(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setList_competitor" id="fr.uv1.bettingServices/Competition#setList_competitor(Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName" id="fr.uv1.bettingServices/Competition#setName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setType" id="fr.uv1.bettingServices/Competition#setType(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.23/@sourceConnections.0" name="Bet" location="157,1073" size="175,215" id="fr.uv1.bettingServices/Bet" runTimeClassModel="Bet(Lfr.uv1.bettingServices.Subscriber;J),id,bet_number_tokens,getId(),setBet_subscriber(Lfr.uv1.bettingServices.Subscriber;),setBet_number_tokens(J),getBet_number_tokens(),Bet(ILfr.uv1.bettingServices.Subscriber;J),setId(I),getBet_subscriber(),bet_subscriber">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="bet_number_tokens" id="fr.uv1.bettingServices/Bet#bet_number_tokens"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bet_subscriber" id="fr.uv1.bettingServices/Bet#bet_subscriber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="fr.uv1.bettingServices/Bet#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="148,120">
+      <children xsi:type="editmodel:MethodEditModel" name="Bet" id="fr.uv1.bettingServices/Bet#Bet(ILfr.uv1.bettingServices.Subscriber;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Bet" id="fr.uv1.bettingServices/Bet#Bet(Lfr.uv1.bettingServices.Subscriber;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBet_number_tokens" id="fr.uv1.bettingServices/Bet#getBet_number_tokens()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBet_subscriber" id="fr.uv1.bettingServices/Bet#getBet_subscriber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="fr.uv1.bettingServices/Bet#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBet_number_tokens" id="fr.uv1.bettingServices/Bet#setBet_number_tokens(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBet_subscriber" id="fr.uv1.bettingServices/Bet#setBet_subscriber(Lfr.uv1.bettingServices.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setId" id="fr.uv1.bettingServices/Bet#setId(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bet_Winner" location="50,1338" size="194,110" id="fr.uv1.bettingServices/Bet_Winner" runTimeClassModel="getWinnerCompetitor(),setWinnerCompetitor(Lfr.uv1.bettingServices.Competitor;),Bet_Winner(Ljava.lang.Integer;Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;),winnerCompetitor">
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="winnerCompetitor" id="fr.uv1.bettingServices/Bet_Winner#winnerCompetitor"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,45">
+      <children xsi:type="editmodel:MethodEditModel" name="Bet_Winner" id="fr.uv1.bettingServices/Bet_Winner#Bet_Winner(Ljava.lang.Integer;Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinnerCompetitor" id="fr.uv1.bettingServices/Bet_Winner#getWinnerCompetitor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinnerCompetitor" id="fr.uv1.bettingServices/Bet_Winner#setWinnerCompetitor(Lfr.uv1.bettingServices.Competitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.24/@sourceConnections.0" autoLocated="true" id="fr.uv1.bettingServices/Bet&lt;-fr.uv1.bettingServices/Bet_Winner" source="//@children.23" target="//@children.22" targetEnd="//@children.23/@sourceConnections.0/@children.1" sourceEnd="//@children.23/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="87,215" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bet_Podium" location="274,1338" size="137,215" id="fr.uv1.bettingServices/Bet_Podium" runTimeClassModel="getSecond(),setThird(Lfr.uv1.bettingServices.Competitor;),second,Bet_Podium(Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;),Bet_Podium(Ljava.lang.Integer;Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;),winner,getThird(),getWinner(),setWinner(Lfr.uv1.bettingServices.Competitor;),setSecond(Lfr.uv1.bettingServices.Competitor;),third">
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="second" id="fr.uv1.bettingServices/Bet_Podium#second"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="third" id="fr.uv1.bettingServices/Bet_Podium#third"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="winner" id="fr.uv1.bettingServices/Bet_Podium#winner"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,120">
+      <children xsi:type="editmodel:MethodEditModel" name="Bet_Podium" id="fr.uv1.bettingServices/Bet_Podium#Bet_Podium(Ljava.lang.Integer;Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Bet_Podium" id="fr.uv1.bettingServices/Bet_Podium#Bet_Podium(Lfr.uv1.bettingServices.Subscriber;JLfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSecond" id="fr.uv1.bettingServices/Bet_Podium#getSecond()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getThird" id="fr.uv1.bettingServices/Bet_Podium#getThird()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner" id="fr.uv1.bettingServices/Bet_Podium#getWinner()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSecond" id="fr.uv1.bettingServices/Bet_Podium#setSecond(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setThird" id="fr.uv1.bettingServices/Bet_Podium#setThird(Lfr.uv1.bettingServices.Competitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWinner" id="fr.uv1.bettingServices/Bet_Podium#setWinner(Lfr.uv1.bettingServices.Competitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="fr.uv1.bettingServices/Bet&lt;-fr.uv1.bettingServices/Bet_Podium" source="//@children.24" target="//@children.23/@sourceConnections.0" targetEnd="//@children.24/@sourceConnections.0/@children.1" sourceEnd="//@children.24/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
